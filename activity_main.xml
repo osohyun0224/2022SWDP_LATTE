@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE7BD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_pnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="참가자 1"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_timer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:id="@+id/tv_timer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_timer"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timer"
+        app:layout_constraintStart_toStartOf="@+id/tv_timer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/tv_timer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목표"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_pnum"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pnum"
+        app:layout_constraintStart_toStartOf="@+id/tv_pnum"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작/정지"
+        android:textSize="48sp"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <Button
+        android:id="@+id/btn_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="처음으로"
+        android:textSize="24sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timer"
+        app:layout_constraintVertical_bias="0.04000002" />
+</androidx.constraintlayout.widget.ConstraintLayout>
